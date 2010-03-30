@@ -1,7 +1,9 @@
+# /etc/fstab: static file system information.
+#
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 proc            /proc           proc    defaults        0       0
-/dev/xvda       /               ext3    noatime,errors=remount-ro 0       1
-/swapfile.40K       swap            swap    defaults        0       0
-#/swapfile.8MB       swap            swap    defaults        0       0
-#/swapfile.128MB       swap            swap    defaults        0       0
-#/swapfile.256MB       swap            swap    defaults        0       0
+# /dev/sda2
+UUID=b0c96b4b-0bba-4455-ab9e-4b3aa2d35758 /               ext3    relatime,errors=remount-ro 0       1
+# /dev/sda3
+UUID=b2b42a31-c047-466a-a053-33f35509f390 none            swap    sw              0       0
+/dev/scd0       /media/cdrom0   udf,iso9660 user,noauto,exec,utf8 0       0

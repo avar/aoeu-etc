@@ -23,7 +23,7 @@ LogLevel INFO
 
 # Authentication:
 LoginGraceTime 120
-PermitRootLogin no
+PermitRootLogin yes
 StrictModes yes
 
 RSAAuthentication yes
@@ -62,7 +62,7 @@ PasswordAuthentication no
 X11Forwarding yes
 X11DisplayOffset 10
 PrintMotd no
-PrintLastLog no
+PrintLastLog yes
 TCPKeepAlive yes
 #UseLogin no
 

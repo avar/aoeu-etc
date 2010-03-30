@@ -1,9 +1,0 @@
-#!/bin/sh
-
-perl -e 'exit 1 if shift >= 0.30' $(awk '{print $1}' /proc/loadavg);
-
-if test $? -eq 0; then
-    /usr/share/munin/munin-graph $@ || exit 1
-
-    /usr/share/munin/munin-html $@ || exit 1
-fi

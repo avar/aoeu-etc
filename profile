@@ -1,15 +1,21 @@
 # /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
 # and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
 
-if [ "`id -u`" -eq 0 ]; then
-  PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-else
-  PATH="/usr/local/bin:/usr/bin:/bin:/usr/games"
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
 fi
 
 if [ "$PS1" ]; then
   if [ "$BASH" ]; then
     PS1='\u@\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then
+    . /etc/bash.bashrc
+    fi
   else
     if [ "`id -u`" -eq 0 ]; then
       PS1='# '
@@ -19,11 +25,4 @@ if [ "$PS1" ]; then
   fi
 fi
 
-export PATH
-
 umask 022
-
-# spread failo's wisdom to interactive shells
-if [[ $- == *i* ]] ; then
-    failo-wisdom
-fi
