@@ -1,4 +1,4 @@
-<VirtualHost *:81>
-        ServerName hw.mw.dev.avar.nix.is
+<VirtualHost *:80>
+        ServerName localhost
         DocumentRoot /home/avar/src/hw/sunrise
 </VirtualHost>
