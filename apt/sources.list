@@ -62,3 +62,9 @@ deb http://archive.ubuntu.com/ubuntu/ jaunty main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu/ jaunty main restricted universe multiverse
 deb http://archive.ubuntu.com/ubuntu/ jaunty-updates main restricted universe multiverse 
 deb-src http://archive.ubuntu.com/ubuntu/ jaunty-updates main restricted universe multiverse
+
+## Cherry-pick old software from karmic
+deb http://archive.ubuntu.com/ubuntu/ karmic main restricted universe multiverse 
+deb-src http://archive.ubuntu.com/ubuntu/ karmic main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ karmic-updates main restricted universe multiverse 
+deb-src http://archive.ubuntu.com/ubuntu/ karmic-updates main restricted universe multiverse
