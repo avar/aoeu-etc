@@ -40,7 +40,6 @@ nogroup:x:65534:
 libuuid:x:101:
 netdev:x:102:avar,manon
 syslog:x:103:
-klog:x:104:
 scanner:x:105:avar
 nvram:x:106:
 fuse:x:107:avar,manon
