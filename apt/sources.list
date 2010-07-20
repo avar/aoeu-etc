@@ -58,13 +58,13 @@ deb-src http://security.ubuntu.com/ubuntu lucid-security multiverse
 # deb http://download.skype.com/linux/repos/debian/ stable non-free # disabled on upgrade to jaunty
 
 ## Cherry-pick old software from jaunty
-deb http://archive.ubuntu.com/ubuntu/ jaunty main restricted universe multiverse 
+deb http://archive.ubuntu.com/ubuntu/ jaunty main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu/ jaunty main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ jaunty-updates main restricted universe multiverse 
+deb http://archive.ubuntu.com/ubuntu/ jaunty-updates main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu/ jaunty-updates main restricted universe multiverse
 
 ## Cherry-pick old software from karmic
-deb http://archive.ubuntu.com/ubuntu/ karmic main restricted universe multiverse 
+deb http://archive.ubuntu.com/ubuntu/ karmic main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu/ karmic main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ karmic-updates main restricted universe multiverse 
+deb http://archive.ubuntu.com/ubuntu/ karmic-updates main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu/ karmic-updates main restricted universe multiverse
