@@ -1,1 +1,8 @@
-../sites-available/hw.mw.dev.avar.nix.is
+<VirtualHost *:80>
+        ServerName localhost
+#        DocumentRoot /tmp/
+#        DocumentRoot /home/avar/src/mw/branches/new-installer/phase3
+        DocumentRoot /home/avar/src/hw/sunrise
+#         DocumentRoot /home/avar/g//mediawiki-branch-new-installer/phase3
+#         DocumentRoot /home/avar/g/mediawiki-trunk-phase3/
+</VirtualHost>
