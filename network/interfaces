@@ -1,3 +1,7 @@
 auto lo
 iface lo inet loopback
 
+iface tun1 inet static
+  address 10.0.0.2
+  netmask 255.0.0.0
+  mtu 500 # optional, may solve ssh problems
