@@ -78,3 +78,4 @@ manon:x:1001:
 tomcat6:x:138:
 postfix:x:139:
 postdrop:x:140:
+oprofile:x:104:
